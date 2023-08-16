@@ -1,0 +1,25 @@
+name: ${project.name}
+version: ${project.version}
+main: net.azisaba.lgw.eventteammanager.EventTeamManager
+description: ${project.description}
+author: ${project.organization.name}
+load: POSTWORLD
+softdepend: [ "Multiverse-Core" ]
+
+commands:
+  eventadmin:
+    aliases: [ "eventteammanager", "eventteammanage", "etm" ]
+    permission: eventteammanager.command.eventteammanager
+  eventshop:
+    aliases: [ "shop", "eventstore", "store" ]
+    permission: eventteammanager.command.eventshop
+  event:
+    permission: eventteammanager.command.event
+
+permissions:
+  eventteammanager.command.eventteammanager:
+    default: op
+  eventteammanager.command.eventshop:
+    default: true
+  eventteammanager.command.event:
+    default: true

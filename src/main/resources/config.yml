@@ -1,0 +1,9 @@
+mysql:
+  host: localhost
+  port: 3306
+  user: user
+  password: password
+  database: eventteammanager
+kill-count-worlds:
+  - "maps"
+victory-point: 80
