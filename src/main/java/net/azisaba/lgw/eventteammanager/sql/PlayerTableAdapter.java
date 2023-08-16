@@ -69,6 +69,20 @@ public class PlayerTableAdapter {
     }
   }
 
+  public void updatePlayerName(UUID uuid, String name) {
+    try (Connection con = connector.getHikariDataSource().getConnection()) {
+      PreparedStatement stm = con.prepareStatement(
+          "UPDATE " + TABLE_NAME + " SET name = ? WHERE uuid = ?;");
+
+      stm.setString(1, name);
+      stm.setString(2, uuid.toString());
+
+      stm.executeUpdate();
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+  }
+
   public int getTeamIndex(UUID uuid) {
     try (Connection con = connector.getHikariDataSource().getConnection()) {
       PreparedStatement stm = con.prepareStatement(

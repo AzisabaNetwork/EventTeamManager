@@ -9,6 +9,7 @@ import net.azisaba.lgw.eventteammanager.config.HologramConfig;
 import net.azisaba.lgw.eventteammanager.listener.EventShopEditListener;
 import net.azisaba.lgw.eventteammanager.listener.EventShopListener;
 import net.azisaba.lgw.eventteammanager.listener.KillPointListener;
+import net.azisaba.lgw.eventteammanager.listener.PlayerNameUpdateListener;
 import net.azisaba.lgw.eventteammanager.listener.VictoryPointListener;
 import net.azisaba.lgw.eventteammanager.listener.hologram.ScoreStatusDisplayListener;
 import net.azisaba.lgw.eventteammanager.shop.EventShopGUIBuilder;
@@ -89,6 +90,7 @@ public class EventTeamManager extends JavaPlugin {
     Bukkit.getPluginManager().registerEvents(new VictoryPointListener(this), this);
     Bukkit.getPluginManager().registerEvents(new EventShopListener(this), this);
     Bukkit.getPluginManager().registerEvents(new EventShopEditListener(this), this);
+    Bukkit.getPluginManager().registerEvents(new PlayerNameUpdateListener(this), this);
 
     Bukkit.getPluginManager().registerEvents(new ScoreStatusDisplayListener(this), this);
 
