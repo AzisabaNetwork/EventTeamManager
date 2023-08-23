@@ -61,8 +61,8 @@
 
   <repositories>
     <repository>
-      <id>spigot</id>
-      <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+      <id>paper</id>
+      <url>https://repo.papermc.io/repository/maven-public/</url>
     </repository>
     <repository>
       <id>rayzr-repo</id>
@@ -97,7 +97,7 @@
     <dependency>
       <groupId>net.azisaba</groupId>
       <artifactId>LeonGunWar</artifactId>
-      <version>1.4.5</version>
+      <version>1.4.6</version>
     </dependency>
   </dependencies>
 </project>
