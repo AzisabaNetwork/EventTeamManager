@@ -107,7 +107,7 @@ public class EventCommand implements CommandExecutor {
         sender.sendMessage(statusCache);
       });
     } else if (args[0].equalsIgnoreCase("shop")) {
-      p.openInventory(plugin.getEventShopGUIBuilder().get());
+      p.performCommand("eventteammanager:eventshop");
     } else {
       sendUsage(sender, label);
     }
