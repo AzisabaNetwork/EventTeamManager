@@ -9,7 +9,7 @@ softdepend: [ "Multiverse-Core" ]
 commands:
   eventadmin:
     aliases: [ "eventteammanager", "eventteammanage", "etm" ]
-    permission: eventteammanager.command.eventteammanager
+    permission: eventteammanager.command.eventadmin
   eventshop:
     aliases: [ "shop", "eventstore", "store" ]
     permission: eventteammanager.command.eventshop
@@ -17,7 +17,7 @@ commands:
     permission: eventteammanager.command.event
 
 permissions:
-  eventteammanager.command.eventteammanager:
+  eventteammanager.command.eventadmin:
     default: op
   eventteammanager.command.eventshop:
     default: true
