@@ -5,7 +5,7 @@
 
   <groupId>net.azisaba</groupId>
   <artifactId>EventTeamManager</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <name>${project.artifactId}</name>
   <description>Management plugin for LeonGunWar events.</description>
